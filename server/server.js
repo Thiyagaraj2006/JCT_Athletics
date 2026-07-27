@@ -10,9 +10,13 @@ const PORT = process.env.PORT || 5000;
 
 // Configure CORS to allow frontend connections
 const corsOptions = {
-  origin: process.env.FRONTEND_URL || '*', // Default to allow all, but configurable for production
-  methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  allowedHeaders: ['Content-Type', 'Authorization'],
+  origin: function (origin, callback) {
+    // Allow any origin
+    callback(null, true);
+  },
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'Accept', 'Origin', 'X-Requested-With'],
+  credentials: true
 };
 app.use(cors(corsOptions));
 app.use(express.json({ limit: '10mb' }));

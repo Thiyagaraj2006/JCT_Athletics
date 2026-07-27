@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { Send, User as UserIcon, Search, MessageSquare } from 'lucide-react';
+import { API_BASE_URL } from '../../config';
+
 
 const Chat = () => {
   const userString = localStorage.getItem('user');

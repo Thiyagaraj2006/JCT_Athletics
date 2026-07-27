@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Upload, Download } from 'lucide-react';
 import axios from 'axios';
+import { API_BASE_URL } from '../../config';
+
 
 const Settings = () => {
   const [settings, setSettings] = useState({

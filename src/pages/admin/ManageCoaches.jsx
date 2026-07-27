@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Search, Plus, Edit2, Trash2, Users, X } from 'lucide-react';
 import toast from 'react-hot-toast';
 import axios from 'axios';
+import { API_BASE_URL } from '../../config';
+
 
 const ManageCoaches = () => {
   const [searchTerm, setSearchTerm] = useState('');

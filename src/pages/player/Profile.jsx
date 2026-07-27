@@ -3,6 +3,8 @@ import { User, Mail, Shield, LogOut, Edit2, Save, X, Camera } from 'lucide-react
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import toast from 'react-hot-toast';
+import { API_BASE_URL } from '../../config';
+
 
 const Profile = () => {
   const navigate = useNavigate();

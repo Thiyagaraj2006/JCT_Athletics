@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import { Search, Plus, Edit2, Trash2, X } from 'lucide-react';
 import toast from 'react-hot-toast';
 import axios from 'axios';
+import { API_BASE_URL } from '../../config';
+
 
 const ManagePlayers = () => {
   const [searchTerm, setSearchTerm] = useState('');

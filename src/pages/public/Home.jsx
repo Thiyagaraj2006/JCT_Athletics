@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Trophy, Users, TrendingUp } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
+import { API_BASE_URL } from '../../config';
+
 
 const Home = () => {
   const [featuredPlayers, setFeaturedPlayers] = useState([]);

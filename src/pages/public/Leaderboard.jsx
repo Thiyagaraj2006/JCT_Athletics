@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Trophy, Medal, Award, Flame, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { API_BASE_URL } from '../../config';
+
 
 const Leaderboard = () => {
   const [leaderboard, setLeaderboard] = useState([]);

@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import { API_BASE_URL } from '../config';
+
 
 const Avatar = ({ user, size = 40, style = {} }) => {
   const [avatarUrl, setAvatarUrl] = useState(user?.img ? `${API_BASE_URL}${user.img}?t=${new Date().getTime()}` : '');

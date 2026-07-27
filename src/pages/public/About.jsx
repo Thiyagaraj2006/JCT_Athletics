@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Award, Target, Flag } from 'lucide-react';
 import axios from 'axios';
+import { API_BASE_URL } from '../../config';
+
 
 const About = () => {
   const [staff, setStaff] = useState([]);
